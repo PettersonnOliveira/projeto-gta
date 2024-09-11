@@ -1,76 +1,91 @@
-body{
-    background-color: #282828;
-    color: #fff;
-}
-.cabecalho{
-    height: 80px;
-    background-color: #0b0b0b;
-    display: flex;
-    justify-content: space-between;
-align-items: center;
-padding: 0 80px;
-border-bottom: 1px solid #282828;
-}
-.cabecalho .logo{
-    display: flex;
-    gap: 15px;
-}
-.cabecalho .menu{
-    display: flex;
-    gap: 30px;
-}
-.cabecalho .menu li a{
-    padding: 30px;
-    color: #e8e8e8;
-    font-weight: bolder;
-    font-size: 15px;
-    font-family: 'Chalet';
-}
-.cabecalho .menu li a:hover{
-    border-bottom:2px solid #fff ;
+body {
+	background-color: #282828;
+	color: #fff;
 }
 
-.home{
-    display: flex;
-    position: relative;
-    min-height: calc(100vh-80px);
+.cabecalho {
+	height: 80px;
+	background-color: #0b0b0b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+	border-bottom: 1px solid #282828;
 }
 
-.home::after{
-   
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7) 35%, transparent 65%);
+.cabecalho .logo {
+	display: flex;
+	gap: 15px;
 }
+
+.cabecalho .menu {
+	display: flex;
+	gap: 30px;
+}
+
+.cabecalho .menu li a {
+	padding: 30px;
+	color: #e8e8e8;
+	font-weight: bolder;
+	font-size: 15px;
+	font-family: "Chalet";
+}
+
+.cabecalho .menu li a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.home {
+	display: flex;
+	position: relative;
+	min-height: calc(100vh - 80px);
+}
+
+.home::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7) 35%, transparent 65%);
+}
+
 .home .imagem-fundo {
 	width: 100%;
 	object-fit: cover;
 }
-.home .informacoes{
-    position: absolute;
-    z-index: 1;
-    min-height: calc(100vh-80px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
-    padding: 80px 80px 80px 170px;
-    max-width: 780px;
+
+.home .informacoes {
+	position: absolute;
+	z-index: 1;
+	min-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+	padding: 80px 80px 80px 170px;
+	max-width: 780px;
 }
-.home .informacoes img{
-    max-width: 150px;
+
+.home .informacoes img {
+	max-width: 150px;
 }
-.home .informacoes .lista-de-jogos{
-    display: flex;
-    gap: 32px;
+
+.home .informacoes .lista-de-jogos {
+	display: flex;
+	gap: 32px;
 }
-.home .informações .titulo{
-    font-family: 'ChaletComprime';
-    font-size: 18px;
-    line-height: 1.6;
+
+.home .informacoes .titulo {
+	font-family: "ChaletComprime";
+	font-size: 55px;
 }
+
+.home .informacoes .texto {
+	font-family: "Chalet";
+	font-size: 18px;
+	line-height: 1.6;
+}
+
 .btn-comprar,
 .btn-plataforma {
 	background-color: rgba(255, 255, 255, 0.1);
@@ -83,9 +98,6 @@ border-bottom: 1px solid #282828;
 	text-transform: uppercase;
 	width: 50%;
 	transition: all 0.3s ease-in;
-}
-.btn-plataforma:hover{
-	color: #F01A1A;
 }
 
 .btn-plataforma {
