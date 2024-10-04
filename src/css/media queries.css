@@ -1,0 +1,69 @@
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+	.cabecalho {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	.cabecalho .menu {
+		gap: 10px;
+	}
+
+	.home .informacoes {
+		padding: 20px;
+	}
+
+	.compre-ja .cartao {
+		width: 100%;
+		padding: 30px;
+        
+	}
+
+	.compre-ja .titulo {
+		font-size: 30px;
+	}
+
+    #botao-comprar{
+        text-align: center;
+
+    }
+    .btn-comprar{
+        align-items: center;
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+	.home .informacoes {
+		padding: 15px;
+	}
+
+	.home .informacoes .titulo {
+		font-size: 24px;
+	}
+
+	.home .informacoes .texto {
+		font-size: 14px;
+	}
+    .btn-comprar{
+        align-items: center;
+        width: 80%;
+        padding: 30px;
+    }
+
+	.btn-comprar,
+	.btn-plataforma {
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+
+	.compre-ja .titulo {
+		font-size: 24px;
+	}
+
+	.compre-ja .cartao {
+		padding: 20px;
+	}
+    
+}
